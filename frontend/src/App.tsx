@@ -1,7 +1,14 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import { GlobalStyles } from "./styles/global";
+import { Home } from "./pages/Home";
+
 export function App() {
   return (
-    <div className="App">
-      <h1>hello world</h1>
-    </div>
+    <>
+      <Router>
+        <GlobalStyles />
+        <Home />
+      </Router>
+    </>
   );
 }
